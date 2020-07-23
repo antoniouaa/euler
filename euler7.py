@@ -8,11 +8,12 @@ def is_prime(n):
             return False
     return True
 
-counter = 0
-num = 2
-while not counter == 10000:
-    num += 1
-    if is_prime(num):
-        counter += 1
+if __name__ == "__main__":
+    counter = 0
+    num = 2
+    while not counter == 10000:
+        num += 1
+        if is_prime(num):
+            counter += 1
         
-print(num)
+    print(num)
