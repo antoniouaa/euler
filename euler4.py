@@ -7,5 +7,6 @@ def palindromic_num():
                 largest.append(num)
     return largest
 
-num = sorted(palindromic_num())[-1]
-print(num)
+if __name__ == "__main__":
+    num = sorted(palindromic_num())[-1]
+    print(num)

@@ -6,13 +6,14 @@ def get_product(slc):
     x = [int(n) for n in slc]
     return reduce(lambda a,b: a*b, x)
 
-res = 0
-for i in range(0, len(num)-13):
-    slc = num[i:i+13]
-    if "0" in slc:
-        continue
-    tmp = get_product(slc)
-    if tmp > res:
-        res = tmp
+if __name__ == "__main__":
+    res = 0
+    for i in range(0, len(num)-13):
+        slc = num[i:i+13]
+        if "0" in slc:
+            continue
+        tmp = get_product(slc)
+        if tmp > res:
+            res = tmp
 
-print("FOUND >>>", res)
+    print("FOUND >>>", res)

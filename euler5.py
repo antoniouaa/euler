@@ -5,5 +5,6 @@ def smallest_multiple():
         res *= i // math.gcd(i, res)
     return res
 
-n = smallest_multiple()
-print(n)
+if __name__ == "__main__":
+    n = smallest_multiple()
+    print(n)

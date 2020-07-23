@@ -7,5 +7,6 @@ def largest_prime_factor(n):
             n //= i
     return n
 
-n = 600851475143
-print(largest_prime_factor(n))
+if __name__ == "__main__":
+    n = 600851475143
+    print(largest_prime_factor(n))

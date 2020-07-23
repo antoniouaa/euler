@@ -5,6 +5,7 @@ def pyth_triplet():
             if i**2 + j**2 == k**2:
                 return i, j, k
             
-tupl = pyth_triplet()
-print(tupl)
-print(tupl[0]*tupl[1]*tupl[2])
+if __name__ == "__main__":
+    tupl = pyth_triplet()
+    print(tupl)
+    print(tupl[0]*tupl[1]*tupl[2])
